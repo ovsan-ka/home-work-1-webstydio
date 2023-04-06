@@ -5,9 +5,13 @@
   --portfolio-titel-color: #2e2f42;
   --portfolio-text-color: #434455;
   --portfolio-title-font-weiht: 500;
+  --body-background-color: #ffffff;
 }
 body {
   font-family: "roboto", sans-serif;
+  letter-spacing: 0, 02;
+  color: #434455;
+  background: #ffffff;
 }
 .list {
   list-style: none;
@@ -19,6 +23,9 @@ body {
 .header {
   background: var(--background-main-color);
 }
+.header-navigation {
+}
+
 .header-logo-web {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -47,11 +54,11 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-.header-link:is(:hover, :focus) {
-  color: #4d5ae5;
+.header-link:hover,
+.header-link:focus {
+  color: #404bbf;
 }
-.header-item {
-}
+
 .header-contact {
 }
 .header-contact-list {
@@ -66,8 +73,9 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
 }
-.header-contact-link:is(:hover, :focus) {
-  color: #4d5ae5;
+.header-contact-link:hover,
+.header-contact-link:focus {
+  color: #404bbf;
 }
 /*-----------HERO--------------*/
 .hero {
@@ -92,6 +100,10 @@ body {
   letter-spacing: 0.04em;
   cursor: pointer;
   color: #ffffff;
+}
+.hero-btn:hover,
+.hero-btn :focus {
+  color: #404bbf;
 }
 /*-----------ADVANTAGES--------------*/
 .advantages {
@@ -141,8 +153,6 @@ body {
 }
 .works-list {
 }
-.list {
-}
 .works-item {
 }
 /*----------TEAM--------------*/
@@ -157,8 +167,6 @@ body {
   color: #2e2f42;
 }
 .team-list {
-}
-.list {
 }
 .team-item {
 }
@@ -187,8 +195,6 @@ body {
   letter-spacing: 0.03em;
   color: #4d5ae5;
 }
-.link {
-}
 .footer-studio {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -205,18 +211,14 @@ body {
   color: #f4f4fd;
 }
 /*---------------FOOTER-----------------*/
+
 /*----------PORTFOLIO--------------*/
 .portfolio {
   background: var(--portfolio-background-color, #ffffff);
 }
-.portfolio-list {
-}
-.list {
-}
-.portfolio-item {
-}
-.portfolio-btn {
-  font-family: "Roboto";
+
+.button-menu-btn {
+  font-family: "Roboto, san-serif";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -228,80 +230,33 @@ body {
   color: #4d5ae5;
   background: --portfolio-background-color #f4f4fd;
 }
-.portfolio-btn:is(:hover, :focus) {
+.button-menu-btn:hover,
+.button-menu-btn:focus {
   color: #ffffff;
   background: #404bbf;
 }
-/*----------BANKING--------------*/
-.banking {
-  background: var(--portfolio-background-color) #ffffff;
-}
-.banking-list {
-}
-.list {
-}
-.banking-item {
-}
-.banking-title {
-  font-weight: var(--portfolio-title-font-weiht) 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--portfolio-titel-color) #2e2f42;
-}
-.banking-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: --portfolio-text-color #434455;
-}
-/*----------SERVICES--------------*/
 
-.services {
-  background: var(--portfolio-background-color, #ffffff);
+.portfolio-list {
 }
-.services-list {
-}
-.list {
-}
-.services-item {
-}
-.services-title {
-  font-weight: --portfolio-title-font-weiht 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: --portfolio-titel-color #2e2f42;
-}
-.services-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: --portfolio-text-color #434455;
-}
-/*----------FRESH--------------*/
 
-.fresh {
-  background: var(--portfolio-background-color, #ffffff);
+.portfolio-item {
 }
-.fresh-list {
+.link {
 }
-.list {
-}
-.fresh-item {
-}
-.fresh-title {
-  font-weight: var(--portfolio-title-font-weiht, 500);
+.portfolio-title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: var(--portfolio-title-font-weight, 500);
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--portfolio-titel-color, #2e2f42);
+  color: var(--portfolio-title-color, #2e2f42);
 }
-.fresh-text {
-  font-weight: 400;
+.portfolio-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--portfolio-text-color) #434455;
+  color: var(--portfolio-text-color, #2e2f42);
 }
